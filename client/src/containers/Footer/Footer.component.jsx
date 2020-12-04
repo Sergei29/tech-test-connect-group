@@ -1,4 +1,5 @@
 import React from "react";
+//style:
 import { FooterContainer } from "./Footer.style";
 
 const Footer = ({ children }) => {
