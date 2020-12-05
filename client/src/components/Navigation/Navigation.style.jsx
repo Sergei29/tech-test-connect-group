@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { color, spacing } from "../../constants/styleVariables";
 
 export const NavContainer = styled.nav`
   display: flex;
@@ -6,10 +7,11 @@ export const NavContainer = styled.nav`
   a {
     text-decoration: none;
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: ${spacing.unit(0.25)};
   }
 
   .active {
-    color: orange;
+    color: ${color.activeNavLink};
+    text-decoration: underline;
   }
 `;

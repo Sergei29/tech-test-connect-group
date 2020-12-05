@@ -4,10 +4,12 @@
       "id": "xe",
       "modelYear": "k17",
       "url": "/vehicle/xe",
+      "description": "The most advanced, efficient and refined sports saloon that Jaguar has ever produced",
+      "price": "£30,000",
       "media": [
         {
           "media": "vehicle",
-          "url": "/images/xe_k17.jpg"
+          "url": "assets/images/xe_k17.jpg"
         }
       ]
     },
@@ -15,10 +17,12 @@
       "id": "xf",
       "modelYear": "k17",
       "url": "/vehicle/xf",
+      "description": "Luxury business saloon with distinctive design, dynamic drive and state-of-the-art technologies.",
+      "price": "£36,000",
       "media": [
         {
           "media": "vehicle",
-          "url": "/images/xf_k17.jpg"
+          "url": "assets/images/xf_k17.jpg"
         }
       ]
     },
@@ -26,10 +30,12 @@
       "id": "xj",
       "modelYear": "k16",
       "url": "/vehicle/xj",
+      "description": "Premium luxury saloon, spacious and beautiful yet powerfully agile.",
+      "price": "£50,000",
       "media": [
         {
           "media": "vehicle",
-          "url": "/images/xj_k16.jpg"
+          "url": "assets/images/xj_k16.jpg"
         }
       ]
     },
@@ -37,10 +43,12 @@
       "id": "fpace",
       "modelYear": "k17",
       "url": "/vehicle/fpace",
+      "description": "Jaguar's luxury performance SUV.",
+      "price": "£40,000",
       "media": [
         {
           "media": "vehicle",
-          "url": "/images/fpace_k17.jpg"
+          "url": "assets/images/fpace_k17.jpg"
         }
       ]
     },
@@ -48,10 +56,12 @@
       "id": "ftype",
       "modelYear": "k17",
       "url": "/vehicle/ftype",
+      "description": "Pulse-quickening, pure Jaguar sports car.",
+      "price": "£60,000",
       "media": [
         {
           "media": "vehicle",
-          "url": "/images/ftype_k17.jpg"
+          "url": "assets/images/ftype_k17.jpg"
         }
       ]
     }
@@ -59,8 +69,6 @@
   "vehicle": [
     {
       "id": "xe",
-      "description": "The most advanced, efficient and refined sports saloon that Jaguar has ever produced",
-      "price": "£30,000",
       "meta": {
         "passengers": 5,
         "drivetrain": ["AWD", "RWD"],
@@ -73,8 +81,6 @@
     },
     {
       "id": "xj",
-      "description": "Premium luxury saloon, spacious and beautiful yet powerfully agile.",
-      "price": "£50,000",
       "meta": {
         "passengers": 5,
         "drivetrain": ["AWD", "RWD"],
@@ -87,8 +93,6 @@
     },
     {
       "id": "xf",
-      "description": "Luxury business saloon with distinctive design, dynamic drive and state-of-the-art technologies.",
-      "price": "£36,000",
       "meta": {
         "passengers": 5,
         "drivetrain": ["AWD", "RWD"],
@@ -101,8 +105,6 @@
     },
     {
       "id": "ftype",
-      "description": "Pulse-quickening, pure Jaguar sports car.",
-      "price": "£60,000",
       "meta": {
         "passengers": 2,
         "drivetrain": ["AWD", "RWD"],
@@ -115,8 +117,6 @@
     },
     {
       "id": "fpace",
-      "description": "Jaguar's luxury performance SUV.",
-      "price": "£40,000",
       "meta": {
         "passengers": 5,
         "drivetrain": ["AWD", "RWD"],

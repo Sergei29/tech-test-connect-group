@@ -1,14 +1,36 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCarById } from "../redux/actions/actions";
+import { fetchCarById, fetchCarList } from "../redux/actions/actions";
 
 export const useCarById = (carId) => {
   const dispatch = useDispatch();
-  useEffect(() => dispatch(fetchCarById(carId)), [dispatch, carId]);
+  useEffect(() => {
+    dispatch(fetchCarList());
+    dispatch(fetchCarById(carId));
+  }, [dispatch, carId]);
 
-  const currentCar = useSelector((state) => state.currentCar);
+  const carList = useSelector((state) => state.carList);
+  const carListDefaultValue = {
+    description: "",
+    modelYear: "",
+    price: "",
+    media: [{ url: "" }],
+  };
+  const { description, modelYear, price, media } =
+    carList.find((carItem) => carItem.id === carId) || carListDefaultValue;
+
+  const carSelectedGeneralInfo = {
+    carName: `Jaguar ${modelYear}`,
+    imgUrl: `/${media[0].url}`,
+    carSummary: description,
+    carPrice: price,
+  };
+
+  const carSelected = useSelector((state) => state.carCurrent);
   const loading = useSelector((state) => state.loading);
   const error = useSelector((state) => state.error);
 
-  return { currentCar, loading, error };
+  const carCurrent = { ...carSelected, ...carSelectedGeneralInfo };
+
+  return { carCurrent, loading, error };
 };
