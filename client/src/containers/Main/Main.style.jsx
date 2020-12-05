@@ -1,5 +1,6 @@
 import styled from "styled-components";
+import { spacing } from "../../constants/styleVariables";
 
 export const MainContainer = styled.main`
-  padding-bottom: 2.5rem;
+  padding-bottom: ${spacing.footerHeight};
 `;

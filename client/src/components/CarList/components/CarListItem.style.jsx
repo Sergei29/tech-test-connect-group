@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { color, spacing, fonts } from "../../../constants/styleVariables";
+import { mediaQueryTo } from "../../../constants/styleMixins";
 
 export const CarListItemContainer = styled(Link)`
   display: grid;
@@ -8,6 +9,9 @@ export const CarListItemContainer = styled(Link)`
   text-decoration: none;
   color: ${color.font};
   font-family: ${fonts.lucida};
+  ${mediaQueryTo.md`
+    margin-bottom: ${spacing.unit(1)};
+  `}
 
   .listItem__image_box {
     overflow: hidden;
@@ -30,6 +34,7 @@ export const CarListItemContainer = styled(Link)`
   }
   .listItem__car_summary {
     font-size: 0.8rem;
+    padding: 0 ${spacing.unit(0.5)};
   }
   &:hover {
     opacity: 0.8;

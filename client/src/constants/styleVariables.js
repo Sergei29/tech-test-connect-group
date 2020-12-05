@@ -10,4 +10,5 @@ export const fonts = {
 
 export const spacing = {
   unit: (n = 1) => `${n * 8}px`,
+  footerHeight: "2.5rem",
 };
