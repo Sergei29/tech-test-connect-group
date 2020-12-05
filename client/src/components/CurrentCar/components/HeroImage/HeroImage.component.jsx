@@ -11,9 +11,9 @@ const HeroImage = ({
 }) => {
   return (
     <HeroImageContainer imgUrl={imgUrl}>
-      <div class="hero-text">
+      <div class="heroText">
         <h1>{headingText}</h1>
-        <p>{subText}</p>
+        <p className="subText">{subText}</p>
         <button onClick={onButtonClick}>{buttonText}</button>
       </div>
     </HeroImageContainer>

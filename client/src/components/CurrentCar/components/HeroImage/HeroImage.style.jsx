@@ -20,7 +20,7 @@ export const HeroImageContainer = styled.div`
   ${mediaQueryTo.xs`
     height: 40vh;
   `}
-  .hero-text {
+  .heroText {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -29,10 +29,15 @@ export const HeroImageContainer = styled.div`
     color: ${color.white};
     h1 {
       font-size: 50px;
-      margin-bottom: ${spacing.unit(4)};
       ${mediaQueryTo.sm`
         font-size: 34px;
       `};
+    }
+    .subText {
+      font-size: 24px;
+      ${mediaQueryTo.sm`
+        font-size: 16px;
+      `}
     }
     button {
       border: none;
@@ -42,6 +47,7 @@ export const HeroImageContainer = styled.div`
       color: ${color.black};
       background-color: ${color.greyLight};
       text-align: center;
+      margin-top: ${spacing.unit(4)};
       cursor: pointer;
       &:hover {
         background-color: ${color.greyDark};
