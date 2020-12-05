@@ -27,10 +27,15 @@ export const HeroImageContainer = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     color: ${color.white};
+    width: 80vw;
     h1 {
       font-size: 50px;
+      margin-bottom: ${spacing.unit(3)};
       ${mediaQueryTo.sm`
         font-size: 34px;
+      `};
+      ${mediaQueryTo.xs`
+        font-size: 30px;
       `};
     }
     .subText {
@@ -38,21 +43,6 @@ export const HeroImageContainer = styled.div`
       ${mediaQueryTo.sm`
         font-size: 16px;
       `}
-    }
-    button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: ${spacing.unit(1)} ${spacing.unit(3)};
-      color: ${color.black};
-      background-color: ${color.greyLight};
-      text-align: center;
-      margin-top: ${spacing.unit(4)};
-      cursor: pointer;
-      &:hover {
-        background-color: ${color.greyDark};
-        color: ${color.white};
-      }
     }
   }
 `;

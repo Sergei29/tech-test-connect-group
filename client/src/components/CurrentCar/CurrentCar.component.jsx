@@ -1,25 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useCarById } from "../../hooks/useCarById";
 //components:
 import HeroImage from "./components/HeroImage";
+import CarParticulars from "./components/CarParticulars";
 
 const CurrentCar = ({ match }) => {
-  const [showDetails, setShowDetails] = useState(false);
   const selectedId = match.params.id;
   const { loading, carCurrent, error } = useCarById(selectedId);
-  console.log("carCurrent :>> ", carCurrent);
-  const buttonClickHandler = () => setShowDetails(true);
+  const { imgUrl, carName, carSummary, id, meta } = carCurrent;
+  const { bodystyles, drivetrain, emissions, passengers } = meta || {
+    bodystyles: [],
+    drivetrain: [],
+    emissions: {},
+    passengers: 0,
+  };
 
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error occured: {error}</p>;
   return (
     <div>
       <HeroImage
-        imgUrl={carCurrent.imgUrl}
-        headingText={`${carCurrent.carName} ${carCurrent.id}`}
-        subText={carCurrent.carSummary}
-        buttonText="see vehicle particulars"
-        onButtonClick={buttonClickHandler}
+        imgUrl={imgUrl}
+        headingText={`${carName} ${id}`}
+        subText={carSummary}
       />
-      {/* Dropdown */}
+      <CarParticulars
+        bodystyles={bodystyles}
+        drivetrain={drivetrain}
+        emissions={emissions}
+        passengers={passengers}
+      />
     </div>
   );
 };

@@ -10,4 +10,7 @@ export const FooterContainer = styled.footer`
   bottom: 0;
   width: 100%;
   height: ${spacing.footerHeight};
+  small {
+    font-size: 10px;
+  }
 `;
