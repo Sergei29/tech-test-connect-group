@@ -1,6 +1,10 @@
 export const color = {
   font: "#333",
   activeNavLink: "blue",
+  black: "#000",
+  white: "#fff",
+  greyDark: "#555",
+  greyLight: " #ddd",
 };
 
 export const fonts = {
