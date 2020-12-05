@@ -3,6 +3,7 @@ import { useCarById } from "../../hooks/useCarById";
 //components:
 import HeroImage from "./components/HeroImage";
 import CarParticulars from "./components/CarParticulars";
+import NotFound from "../NotFound";
 
 const CurrentCar = ({ match }) => {
   const selectedId = match.params.id;
@@ -16,7 +17,7 @@ const CurrentCar = ({ match }) => {
   };
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error occured: {error}</p>;
+  if (error) return <NotFound error={error} />;
   return (
     <div>
       <HeroImage
