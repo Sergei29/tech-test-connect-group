@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useCarList } from "../../hooks/useCarList";
+//components:
+import CarListItem from "./components/CarListItem.component";
 //style:
 import { CarListContainer } from "./CarList.style";
+
 const CarList = () => {
   const { loading, carList, error } = useCarList();
 
@@ -10,16 +12,18 @@ const CarList = () => {
     if (loading) return <p>Loading...</p>;
     if (error) return <p>{error}</p>;
     if (carList.length) {
-      return carList.map(({ id, media, url }) => {
-        console.log(media[0].url);
-        return (
-          <div key={id}>
-            <Link to={url}>
-              <img src={`/${media[0].url}`} alt="vehicle" />
-            </Link>
-          </div>
-        );
-      });
+      return carList.map(
+        ({ id, media, url, modelYear, description, price }) => (
+          <CarListItem
+            key={id}
+            carName={`Jaguar ${modelYear}`}
+            imgUrl={`/${media[0].url}`}
+            carDetailsUrl={url}
+            carSummary={description}
+            carPrice={price}
+          />
+        )
+      );
     }
   };
 
