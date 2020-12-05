@@ -7,7 +7,7 @@ const Footer = ({ children }) => {
     <FooterContainer>
       {children}
       <small>
-        This page is created for training purposes only as a technical test.
+        This page is created as a technical test for training purposes only.
       </small>
     </FooterContainer>
   );

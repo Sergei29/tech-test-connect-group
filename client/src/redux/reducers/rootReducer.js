@@ -2,7 +2,7 @@ import actionsTypes from "../actions/actions.types";
 
 const INITIAL_STATE = {
   carList: [],
-  currentCar: {},
+  carCurrent: {},
   error: null,
   loading: false,
 };
@@ -34,7 +34,7 @@ const rootReducer = (state = INITIAL_STATE, action) => {
         ...state,
         loading: false,
         error: null,
-        currentCar: action.payload,
+        carCurrent: action.payload,
       };
     default:
       return state;

@@ -6,7 +6,9 @@
   "scripts": {
     "server": "json-server --watch db.json --port 4000",
     "client": "cd client && npm start",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "test": "cd client && npm run test",
+    "test:coverage": "cd client && npm run test -- --coverage --watchAll=false"
   },
   "keywords": [],
   "author": "",

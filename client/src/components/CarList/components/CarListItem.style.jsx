@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { color, spacing, fonts } from "../../../constants/styleVariables";
+import { color, spacing } from "../../../constants/styleVariables";
 import { mediaQueryTo } from "../../../constants/styleMixins";
 
 export const CarListItemContainer = styled(Link)`
@@ -8,7 +8,6 @@ export const CarListItemContainer = styled(Link)`
   align-content: flex-start;
   text-decoration: none;
   color: ${color.font};
-  font-family: ${fonts.lucida};
   ${mediaQueryTo.md`
     margin-bottom: ${spacing.unit(1)};
   `}
