@@ -1,4 +1,4 @@
-import { shallowRenderer } from "../../../utils/testingUtils";
+import { shallowRenderer } from "../../../../utils/testingUtils";
 import CarListItem from "./CarListItem.component";
 
 describe("CarListItem", () => {
