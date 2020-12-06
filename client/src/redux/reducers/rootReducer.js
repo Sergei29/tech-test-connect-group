@@ -1,6 +1,6 @@
 import actionsTypes from "../actions/actions.types";
 
-const INITIAL_STATE = {
+export const INITIAL_STATE = {
   carList: [],
   carCurrent: {},
   error: null,
