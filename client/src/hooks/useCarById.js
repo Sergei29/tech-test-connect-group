@@ -2,6 +2,11 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCarById, fetchCarList } from "../redux/actions/actions";
 
+/**
+ * @description custom hook fetch car details by ID
+ * @param {String} carId car ID
+ * @returns {Object} car details, also loading and error status
+ */
 export const useCarById = (carId) => {
   const dispatch = useDispatch();
   useEffect(() => {
