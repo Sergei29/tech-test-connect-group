@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentCar should match the snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <CurrentCar
+        match={
+          Object {
+            "params": Object {
+              "id": "xe",
+            },
+          }
+        }
+      >
+        <div>
+          <HeroImage
+            headingText="Jaguar k17 xe"
+            imgUrl="/assets/images/xe_k17.jpg"
+            subText="The most advanced, efficient and refined sports saloon that Jaguar has ever produced"
+          >
+            <styled.div
+              imgUrl="/assets/images/xe_k17.jpg"
+            >
+              <div
+                className="sc-bdfBwQ iVhXjw"
+              >
+                <div
+                  className="heroText"
+                >
+                  <h1>
+                    Jaguar k17 xe
+                  </h1>
+                  <p
+                    className="subText"
+                  >
+                    The most advanced, efficient and refined sports saloon that Jaguar has ever produced
+                  </p>
+                </div>
+              </div>
+            </styled.div>
+          </HeroImage>
+          <CarParticulars
+            bodystyles={
+              Array [
+                "saloon",
+              ]
+            }
+            drivetrain={
+              Array [
+                "AWD",
+                "RWD",
+              ]
+            }
+            emissions={
+              Object {
+                "template": "CO2 Emissions $value g/km",
+                "value": 99,
+              }
+            }
+            passengers={5}
+          >
+            <styled.div>
+              <div
+                className="sc-gsTCUz bWpwzB"
+              >
+                <div
+                  className="particularsItem"
+                >
+                  <span>
+                    Bodystyle: 
+                  </span>
+                  <span>
+                    saloon
+                  </span>
+                </div>
+                <div
+                  className="particularsItem"
+                >
+                  <span>
+                    Drivetrain: 
+                  </span>
+                  <span>
+                    AWD, RWD
+                  </span>
+                </div>
+                <div
+                  className="particularsItem"
+                >
+                  <span>
+                    CO2 Emissions $value g/km
+                     :
+                  </span>
+                  <span>
+                    99
+                  </span>
+                </div>
+                <div
+                  className="particularsItem"
+                >
+                  <span>
+                    Passengers: 
+                  </span>
+                  <span>
+                    5
+                  </span>
+                </div>
+              </div>
+            </styled.div>
+          </CarParticulars>
+        </div>
+      </CurrentCar>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;

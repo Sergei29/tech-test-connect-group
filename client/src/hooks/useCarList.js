@@ -4,7 +4,9 @@ import { fetchCarList } from "../redux/actions/actions";
 
 export const useCarList = () => {
   const dispatch = useDispatch();
-  useEffect(() => dispatch(fetchCarList()), [dispatch]);
+  useEffect(() => {
+    dispatch(fetchCarList());
+  }, [dispatch]);
 
   const carList = useSelector((state) => state.carList);
   const loading = useSelector((state) => state.loading);

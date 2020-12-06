@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarListItem should match the snapshot 1`] = `
+<Styled(Link)
+  to="/vehicle/xe"
+>
+  <div
+    className="listItem__image_box"
+  >
+    <img
+      alt="vehicle Jaguar k17 xe"
+      src="assets/images/xe_k17.jpg"
+    />
+  </div>
+  <h3
+    className="listItem__car_name"
+  >
+    <span>
+      Jaguar k17 xe
+    </span>
+  </h3>
+  <p
+    className="listItem__car_price"
+  >
+    £30,000
+  </p>
+  <p
+    className="listItem__car_summary"
+  >
+    The most advanced, efficient and refined sports saloon...
+  </p>
+</Styled(Link)>
+`;

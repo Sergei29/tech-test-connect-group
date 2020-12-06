@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should match the snapshot 1`] = `
+<styled.footer>
+  <small>
+    This page is created as a technical test for training purposes only.
+  </small>
+</styled.footer>
+`;

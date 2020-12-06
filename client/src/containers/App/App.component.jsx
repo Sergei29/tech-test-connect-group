@@ -12,7 +12,7 @@ import NotFound from "../../components/NotFound";
 import { AppContainer } from "./App.style";
 import { GlobalStyle } from "./GlobalStyle.style";
 
-const App = () => {
+export const App = () => {
   return (
     <>
       <GlobalStyle />

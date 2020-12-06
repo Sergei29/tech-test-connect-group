@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation should match the snapshot 1`] = `
+<styled.nav>
+  <NavLink
+    exact={true}
+    to="/"
+  >
+    Homepage
+  </NavLink>
+</styled.nav>
+`;
