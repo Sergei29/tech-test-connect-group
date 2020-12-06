@@ -1,12 +1,6 @@
 import React from "react";
 import CarList from "../../components/CarList";
 
-const Homepage = () => {
-  return (
-    <div>
-      <CarList />
-    </div>
-  );
-};
+const Homepage = () => <CarList />;
 
 export default Homepage;

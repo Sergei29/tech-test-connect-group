@@ -1,0 +1,303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <App>
+        <Memo(l) />
+        <styled.div>
+          <div
+            className="sc-fubCfw iIhXEi"
+          >
+            <Header>
+              <styled.header>
+                <header
+                  className="sc-bdfBwQ hMdVtH"
+                >
+                  <Navigation>
+                    <styled.nav>
+                      <nav
+                        className="sc-hKgILt jqgJNf"
+                      >
+                        <NavLink
+                          exact={true}
+                          to="/"
+                        >
+                          <Link
+                            aria-current="page"
+                            className="active"
+                            style={Object {}}
+                            to={
+                              Object {
+                                "hash": "",
+                                "pathname": "/",
+                                "search": "",
+                                "state": null,
+                              }
+                            }
+                          >
+                            <LinkAnchor
+                              aria-current="page"
+                              className="active"
+                              href="/"
+                              navigate={[Function]}
+                              style={Object {}}
+                            >
+                              <a
+                                aria-current="page"
+                                className="active"
+                                href="/"
+                                onClick={[Function]}
+                                style={Object {}}
+                              >
+                                Homepage
+                              </a>
+                            </LinkAnchor>
+                          </Link>
+                        </NavLink>
+                      </nav>
+                    </styled.nav>
+                  </Navigation>
+                </header>
+              </styled.header>
+            </Header>
+            <Main>
+              <styled.main>
+                <main
+                  className="sc-dlfnbm dWLEXF"
+                >
+                  <Switch>
+                    <Route
+                      component={[Function]}
+                      computedMatch={
+                        Object {
+                          "isExact": true,
+                          "params": Object {},
+                          "path": "/",
+                          "url": "/",
+                        }
+                      }
+                      exact={true}
+                      location={
+                        Object {
+                          "hash": "",
+                          "pathname": "/",
+                          "search": "",
+                          "state": undefined,
+                        }
+                      }
+                      path="/"
+                    >
+                      <Homepage
+                        history={
+                          Object {
+                            "action": "POP",
+                            "block": [Function],
+                            "createHref": [Function],
+                            "go": [Function],
+                            "goBack": [Function],
+                            "goForward": [Function],
+                            "length": 1,
+                            "listen": [Function],
+                            "location": Object {
+                              "hash": "",
+                              "pathname": "/",
+                              "search": "",
+                              "state": undefined,
+                            },
+                            "push": [Function],
+                            "replace": [Function],
+                          }
+                        }
+                        location={
+                          Object {
+                            "hash": "",
+                            "pathname": "/",
+                            "search": "",
+                            "state": undefined,
+                          }
+                        }
+                        match={
+                          Object {
+                            "isExact": true,
+                            "params": Object {},
+                            "path": "/",
+                            "url": "/",
+                          }
+                        }
+                      >
+                        <CarList>
+                          <styled.div>
+                            <div
+                              className="sc-jSgupP jjPyUa"
+                            >
+                              <CarListItem
+                                carDetailsUrl="/vehicle/xe"
+                                carName="Jaguar k17"
+                                carPrice="£30,000"
+                                carSummary="The most advanced, efficient and refined sports saloon that Jaguar has ever produced"
+                                imgUrl="/assets/images/xe_k17.jpg"
+                                key="xe"
+                              >
+                                <Styled(Link)
+                                  to="/vehicle/xe"
+                                >
+                                  <Link
+                                    className="sc-eCssSg dmJigc"
+                                    to="/vehicle/xe"
+                                  >
+                                    <LinkAnchor
+                                      className="sc-eCssSg dmJigc"
+                                      href="/vehicle/xe"
+                                      navigate={[Function]}
+                                    >
+                                      <a
+                                        className="sc-eCssSg dmJigc"
+                                        href="/vehicle/xe"
+                                        onClick={[Function]}
+                                      >
+                                        <div
+                                          className="listItem__image_box"
+                                        >
+                                          <img
+                                            alt="vehicle Jaguar k17"
+                                            src="/assets/images/xe_k17.jpg"
+                                          />
+                                        </div>
+                                        <h3
+                                          className="listItem__car_name"
+                                        >
+                                          <span>
+                                            Jaguar k17
+                                          </span>
+                                        </h3>
+                                        <p
+                                          className="listItem__car_price"
+                                        >
+                                          £30,000
+                                        </p>
+                                        <p
+                                          className="listItem__car_summary"
+                                        >
+                                          The most advanced, efficient and refined sports saloon...
+                                        </p>
+                                      </a>
+                                    </LinkAnchor>
+                                  </Link>
+                                </Styled(Link)>
+                              </CarListItem>
+                              <CarListItem
+                                carDetailsUrl="/vehicle/xf"
+                                carName="Jaguar k17"
+                                carPrice="£36,000"
+                                carSummary="Luxury business saloon with distinctive design, dynamic drive and state-of-the-art technologies."
+                                imgUrl="/assets/images/xf_k17.jpg"
+                                key="xf"
+                              >
+                                <Styled(Link)
+                                  to="/vehicle/xf"
+                                >
+                                  <Link
+                                    className="sc-eCssSg dmJigc"
+                                    to="/vehicle/xf"
+                                  >
+                                    <LinkAnchor
+                                      className="sc-eCssSg dmJigc"
+                                      href="/vehicle/xf"
+                                      navigate={[Function]}
+                                    >
+                                      <a
+                                        className="sc-eCssSg dmJigc"
+                                        href="/vehicle/xf"
+                                        onClick={[Function]}
+                                      >
+                                        <div
+                                          className="listItem__image_box"
+                                        >
+                                          <img
+                                            alt="vehicle Jaguar k17"
+                                            src="/assets/images/xf_k17.jpg"
+                                          />
+                                        </div>
+                                        <h3
+                                          className="listItem__car_name"
+                                        >
+                                          <span>
+                                            Jaguar k17
+                                          </span>
+                                        </h3>
+                                        <p
+                                          className="listItem__car_price"
+                                        >
+                                          £36,000
+                                        </p>
+                                        <p
+                                          className="listItem__car_summary"
+                                        >
+                                          Luxury business saloon with distinctive design, dynamic...
+                                        </p>
+                                      </a>
+                                    </LinkAnchor>
+                                  </Link>
+                                </Styled(Link)>
+                              </CarListItem>
+                            </div>
+                          </styled.div>
+                        </CarList>
+                      </Homepage>
+                    </Route>
+                  </Switch>
+                </main>
+              </styled.main>
+            </Main>
+            <Footer>
+              <styled.footer>
+                <footer
+                  className="sc-gsTCUz bYyilX"
+                >
+                  <small>
+                    This page is created as a technical test for training purposes only.
+                  </small>
+                </footer>
+              </styled.footer>
+            </Footer>
+          </div>
+        </styled.div>
+      </App>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;

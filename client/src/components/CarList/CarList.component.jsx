@@ -7,27 +7,25 @@ import { CarListContainer } from "./CarList.style";
 
 const CarList = () => {
   const { loading, carList, error } = useCarList();
+  let displayCarList = null;
+  if (loading) displayCarList = <p>Loading...</p>;
+  if (error) displayCarList = <p>{error}</p>;
+  if (carList.length) {
+    displayCarList = carList.map(
+      ({ id, media, url, modelYear, description, price }) => (
+        <CarListItem
+          key={id}
+          carName={`Jaguar ${modelYear}`}
+          imgUrl={`/${media[0].url}`}
+          carDetailsUrl={url}
+          carSummary={description}
+          carPrice={price}
+        />
+      )
+    );
+  }
 
-  const displayCarList = () => {
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>{error}</p>;
-    if (carList.length) {
-      return carList.map(
-        ({ id, media, url, modelYear, description, price }) => (
-          <CarListItem
-            key={id}
-            carName={`Jaguar ${modelYear}`}
-            imgUrl={`/${media[0].url}`}
-            carDetailsUrl={url}
-            carSummary={description}
-            carPrice={price}
-          />
-        )
-      );
-    }
-  };
-
-  return <CarListContainer>{displayCarList()}</CarListContainer>;
+  return <CarListContainer>{displayCarList}</CarListContainer>;
 };
 
 export default CarList;

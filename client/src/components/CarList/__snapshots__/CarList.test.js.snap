@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarList should match the snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <CarList>
+        <styled.div>
+          <div
+            className="sc-gsTCUz gooFPB"
+          >
+            <CarListItem
+              carDetailsUrl="/vehicle/xe"
+              carName="Jaguar k17"
+              carPrice="£30,000"
+              carSummary="The most advanced, efficient and refined sports saloon that Jaguar has ever produced"
+              imgUrl="/assets/images/xe_k17.jpg"
+              key="xe"
+            >
+              <Styled(Link)
+                to="/vehicle/xe"
+              >
+                <Link
+                  className="sc-bdfBwQ KGYe"
+                  to="/vehicle/xe"
+                >
+                  <LinkAnchor
+                    className="sc-bdfBwQ KGYe"
+                    href="/vehicle/xe"
+                    navigate={[Function]}
+                  >
+                    <a
+                      className="sc-bdfBwQ KGYe"
+                      href="/vehicle/xe"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="listItem__image_box"
+                      >
+                        <img
+                          alt="vehicle Jaguar k17"
+                          src="/assets/images/xe_k17.jpg"
+                        />
+                      </div>
+                      <h3
+                        className="listItem__car_name"
+                      >
+                        <span>
+                          Jaguar k17
+                        </span>
+                      </h3>
+                      <p
+                        className="listItem__car_price"
+                      >
+                        £30,000
+                      </p>
+                      <p
+                        className="listItem__car_summary"
+                      >
+                        The most advanced, efficient and refined sports saloon...
+                      </p>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </Styled(Link)>
+            </CarListItem>
+            <CarListItem
+              carDetailsUrl="/vehicle/xf"
+              carName="Jaguar k17"
+              carPrice="£36,000"
+              carSummary="Luxury business saloon with distinctive design, dynamic drive and state-of-the-art technologies."
+              imgUrl="/assets/images/xf_k17.jpg"
+              key="xf"
+            >
+              <Styled(Link)
+                to="/vehicle/xf"
+              >
+                <Link
+                  className="sc-bdfBwQ KGYe"
+                  to="/vehicle/xf"
+                >
+                  <LinkAnchor
+                    className="sc-bdfBwQ KGYe"
+                    href="/vehicle/xf"
+                    navigate={[Function]}
+                  >
+                    <a
+                      className="sc-bdfBwQ KGYe"
+                      href="/vehicle/xf"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="listItem__image_box"
+                      >
+                        <img
+                          alt="vehicle Jaguar k17"
+                          src="/assets/images/xf_k17.jpg"
+                        />
+                      </div>
+                      <h3
+                        className="listItem__car_name"
+                      >
+                        <span>
+                          Jaguar k17
+                        </span>
+                      </h3>
+                      <p
+                        className="listItem__car_price"
+                      >
+                        £36,000
+                      </p>
+                      <p
+                        className="listItem__car_summary"
+                      >
+                        Luxury business saloon with distinctive design, dynamic...
+                      </p>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </Styled(Link)>
+            </CarListItem>
+          </div>
+        </styled.div>
+      </CarList>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;
