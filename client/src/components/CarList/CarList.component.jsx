@@ -1,7 +1,7 @@
 import React from "react";
 import { useCarList } from "../../hooks/useCarList";
 //components:
-import CarListItem from "./components/CarListItem.component";
+import CarListItem from "./components/CarListItem";
 //style:
 import { CarListContainer } from "./CarList.style";
 

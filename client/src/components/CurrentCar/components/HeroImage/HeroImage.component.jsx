@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 //style:
 import { HeroImageContainer } from "./HeroImage.style";
 
@@ -11,6 +12,17 @@ const HeroImage = ({ imgUrl, headingText, subText }) => {
       </div>
     </HeroImageContainer>
   );
+};
+
+HeroImage.defaultProps = {
+  headingText: "",
+  subText: "",
+};
+
+HeroImage.propTypes = {
+  imgUrl: PropTypes.string.isRequired,
+  headingText: PropTypes.string,
+  subText: PropTypes.string,
 };
 
 export default HeroImage;

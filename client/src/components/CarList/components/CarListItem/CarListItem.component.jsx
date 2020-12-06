@@ -1,5 +1,6 @@
 import React from "react";
-import { truncateString } from "../../../utils/truncateString";
+import PropTypes from "prop-types";
+import { truncateString } from "../../../../utils/truncateString";
 //styles:
 import { CarListItemContainer } from "./CarListItem.style";
 
@@ -22,6 +23,14 @@ const CarListItem = ({
       <p className="listItem__car_summary">{truncateString(carSummary, 50)}</p>
     </CarListItemContainer>
   );
+};
+
+CarListItem.propTypes = {
+  carName: PropTypes.string.isRequired,
+  imgUrl: PropTypes.string.isRequired,
+  carDetailsUrl: PropTypes.string.isRequired,
+  carSummary: PropTypes.string.isRequired,
+  carPrice: PropTypes.string.isRequired,
 };
 
 export default CarListItem;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 //style:
 import { CarParticularsContainer } from "./CarParticulars.style";
 
@@ -47,6 +48,20 @@ const CarParticulars = ({ bodystyles, drivetrain, emissions, passengers }) => {
       {renderPassengers()}
     </CarParticularsContainer>
   );
+};
+
+CarParticulars.defaultProps = {
+  bodystyles: [],
+  drivetrain: [],
+  emissions: {},
+  passengers: 0,
+};
+
+CarParticulars.propTypes = {
+  bodystyles: PropTypes.array,
+  drivetrain: PropTypes.array,
+  emissions: PropTypes.object,
+  passengers: PropTypes.number,
 };
 
 export default CarParticulars;

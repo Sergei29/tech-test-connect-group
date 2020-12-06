@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 //style:
 import { FooterContainer } from "./Footer.style";
 
@@ -11,6 +13,18 @@ const Footer = ({ children }) => {
       </small>
     </FooterContainer>
   );
+};
+
+Footer.defaultProps = {
+  children: null,
+};
+
+Footer.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+    PropTypes.string,
+  ]),
 };
 
 export default Footer;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useCarById } from "../../hooks/useCarById";
 //components:
 import HeroImage from "./components/HeroImage";
@@ -33,6 +34,10 @@ const CurrentCar = ({ match }) => {
       />
     </div>
   );
+};
+
+CurrentCar.propTypes = {
+  match: PropTypes.object.isRequired,
 };
 
 export default CurrentCar;
