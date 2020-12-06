@@ -4,6 +4,15 @@ import { truncateString } from "../../../../utils/truncateString";
 //styles:
 import { CarListItemContainer } from "./CarListItem.style";
 
+/**
+ * @description functional component for car list item
+ * @param {String} {carName car mark model
+ * @param {String} imgUrl path to image
+ * @param {String} carDetailsUrl path to car detals page
+ * @param {String} carSummary brief description
+ * @param {String} carPrice} price
+ * @returns {JSX} component markup
+ */
 const CarListItem = ({
   carName,
   imgUrl,

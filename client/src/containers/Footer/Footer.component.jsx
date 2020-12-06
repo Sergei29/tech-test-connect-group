@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 //style:
 import { FooterContainer } from "./Footer.style";
 
+/**
+ * @description functional component, page footer container
+ * @returns {JSX} component markup
+ */
 const Footer = ({ children }) => {
   return (
     <FooterContainer>

@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 //style:
 import { HeaderContainer } from "./Header.style";
 
+/**
+ * @description functional component, page header container
+ * @returns {JSX} component markup
+ */
 const Header = ({ children }) => {
   return <HeaderContainer>{children}</HeaderContainer>;
 };

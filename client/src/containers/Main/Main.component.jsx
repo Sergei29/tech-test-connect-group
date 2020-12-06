@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 //style:
 import { MainContainer } from "./Main.style";
 
+/**
+ * @description functional component, page main content container
+ * @returns {JSX} component markup
+ */
 const Main = ({ children }) => {
   return <MainContainer>{children}</MainContainer>;
 };
