@@ -24,7 +24,6 @@ const CurrentCar = ({ match }) => {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <NotFound error={error} />;
-
   return (
     <div>
       <HeroImage
