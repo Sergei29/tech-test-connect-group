@@ -1,12 +1,17 @@
 import React from "react";
 import { useCarList } from "../../hooks/useCarList";
 //components:
-import CarListItem from "./components/CarListItem.component";
+import CarListItem from "./components/CarListItem";
 //style:
 import { CarListContainer } from "./CarList.style";
 
+/**
+ * @description functional component for car list
+ * @returns {JSX} component markup
+ */
 const CarList = () => {
   const { loading, carList, error } = useCarList();
+
   let displayCarList = null;
   if (loading) displayCarList = <p>Loading...</p>;
   if (error) displayCarList = <p>{error}</p>;

@@ -12,6 +12,10 @@ import NotFound from "../../components/NotFound";
 import { AppContainer } from "./App.style";
 import { GlobalStyle } from "./GlobalStyle.style";
 
+/**
+ * @description functional component, application container
+ * @returns {JSX} component markup
+ */
 export const App = () => {
   return (
     <>

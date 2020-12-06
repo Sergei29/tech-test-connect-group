@@ -7,6 +7,12 @@ export const INITIAL_STATE = {
   loading: false,
 };
 
+/**
+ * @description state reducer, that updates the state
+ * @param {Object} state state value
+ * @param {Object} action action fired
+ * @returns {Object} new state.
+ */
 const rootReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case actionsTypes.FETCH_CARLIST_START:

@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
+
 export const CAR_LIST = [
   {
     id: "xe",
@@ -39,6 +40,10 @@ export const ERROR_MESSAGE = "Resource not found.";
 
 export const mockStore = configureMockStore([thunk]);
 
+/**
+ * @description generates mocked store
+ * @returns {Object} mocked store
+ */
 export const makeMockStore = (state = {}) => mockStore({ ...state });
 
 export const store = makeMockStore({
@@ -55,10 +60,18 @@ export const storeWithError = makeMockStore({
   loading: false,
 });
 
+/**
+ * @mock store provider HOC
+ * @param {Node} {children}
+ * @returns {JSX} components with provided mock store
+ */
 export const MockStoreProvider = ({ children }) => (
   <Provider store={store}> {children} </Provider>
 );
 
+/**
+ * @returns {Object} enzyme shallow rendered wrapper for connected component
+ */
 export const shallowRendererReduxConnected = (ComponentName, props = {}) =>
   shallow(
     <Provider store={store}>
@@ -68,6 +81,9 @@ export const shallowRendererReduxConnected = (ComponentName, props = {}) =>
     </Provider>
   );
 
+/**
+ * @returns {Object} enzyme mount(deep) rendered wrapper for connected component
+ */
 export const mountRendererReduxConnected = (ComponentName, props = {}) =>
   mount(
     <Provider store={store}>
@@ -77,9 +93,15 @@ export const mountRendererReduxConnected = (ComponentName, props = {}) =>
     </Provider>
   );
 
+/**
+ * @returns {Object} enzyme shallow rendered wrapper
+ */
 export const shallowRenderer = (ComponentName, props = {}) =>
   shallow(<ComponentName {...props} />);
 
+/**
+ * @returns {Object} enzyme mount(deep) rendered wrapper
+ */
 export const mountRenderer = (ComponentName, props = {}) =>
   mount(
     <BrowserRouter>

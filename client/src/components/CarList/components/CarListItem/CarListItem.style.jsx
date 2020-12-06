@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { color, spacing } from "../../../constants/styleVariables";
-import { mediaQueryTo } from "../../../constants/styleMixins";
+import { color, spacing } from "../../../../constants/styleVariables";
+import { mediaQueryTo } from "../../../../constants/styleMixins";
 
 export const CarListItemContainer = styled(Link)`
   display: grid;
