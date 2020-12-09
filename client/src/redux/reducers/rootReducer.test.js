@@ -3,7 +3,7 @@ import actionsTypes from "../actions/actions.types";
 import { ERROR_MESSAGE, CAR_LIST, CAR_CURRENT } from "../../utils/testingUtils";
 
 describe("root reducer", () => {
-  it("should return defalut state", () => {
+  it("should return default state", () => {
     const expectedState = INITIAL_STATE;
     const receivedState = rootReducer(undefined, {});
 
